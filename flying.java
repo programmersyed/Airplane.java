@@ -8,7 +8,6 @@ public class flying {
         milesTraveled(miles);
 
     }
-
     public static void milesTraveled(int x){
         int rate = 56;
         int cost = x * rate;
@@ -17,11 +16,14 @@ public class flying {
         String name = lion.nextLine();
         System.out.println(name+", your flight costs "+cost+"$!");
         String [] cakes = {"Strawberry", "Blueberry", "Pumpkin", "Raspberry"};
+
+        for (int i = 0; i<=cakes.length-1;i++){
+            System.out.println(cakes[i]);
+        }
+
         if (cost <1000){
             System.out.print(cakes[0]+" cake as a gift for ordering.");
-
         } else System.out.print(cakes[2]+" cake as a gift for ordering.");
-
     }
 
 }
